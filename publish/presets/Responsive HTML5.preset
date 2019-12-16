@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preset>
+  <content>
+    <conditional>
+      <name>NOT_Exclude</name>
+      <path>../expressions/NOT_Exclude.expn</path>
+    </conditional>
+    <toc>
+      <name>rh_reimagined</name>
+      <path>../../toc/rh_reimagined.toc</path>
+    </toc>
+    <index type="boolean">true</index>
+    <glossary>
+      <name>rh_reimagined</name>
+      <path>../../glossary/rh_reimagined.glo</path>
+    </glossary>
+    <brs type="array">
+      <brsitem>
+        <name>Sequence</name>
+        <path>../browsesequence/Sequence.brs</path>
+      </brsitem>
+    </brs>
+    <mapFiles type="array"></mapFiles>
+    <includeExpandingText type="boolean">true</includeExpandingText>
+    <includeDropdownText type="boolean">true</includeDropdownText>
+  </content>
+  <title>RoboHelp Reimagined</title>
+  <type>html5</type>
+  <glosstermEffect type="number">0</glosstermEffect>
+  <name>Responsive HTML5</name>
+  <starterPage>index.htm</starterPage>
+  <defaultTopic>
+    <name>robohelp_reimagined</name>
+    <path>../../contents/01_rh_reimagined/robohelp_reimagined.htm</path>
+  </defaultTopic>
+  <lowercasenames type="number">0</lowercasenames>
+  <mobileapp>
+    <android type="boolean">true</android>
+    <iOS type="boolean">false</iOS>
+  </mobileapp>
+  <search>
+    <suggestion type="boolean">true</suggestion>
+    <context type="boolean">true</context>
+    <contextLimit>100</contextLimit>
+    <maxSearchresults type="number">20</maxSearchresults>
+    <glossary type="boolean">true</glossary>
+    <showSpeclChars type="boolean">false</showSpeclChars>
+    <speclChars>0;1;2;3;4;5;6;7;8;9</speclChars>
+    <fuzzy type="boolean">true</fuzzy>
+  </search>
+  <sitemap>
+    <use type="boolean">true</use>
+    <helpBaseURL></helpBaseURL>
+    <changeFrequency>Monthly</changeFrequency>
+  </sitemap>
+  <skin>
+    <name>html5</name>
+    <path>../skins/Azure_Blue/html5.skn</path>
+  </skin>
+  <createThumbNails type="boolean">false</createThumbNails>
+  <patchHomepage type="boolean">true</patchHomepage>
+  <gdprCompliance type="boolean">true</gdprCompliance>
+</preset>

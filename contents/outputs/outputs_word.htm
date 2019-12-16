@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="topic-status" content="Complete"/>
+<meta name="generator" content="Adobe RoboHelp 2019"/>
+<title>Word Output</title>
+<link rel="StyleSheet" href="../assets/css/rh_reimagined.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Printed Documents"/></head>
+
+<body>
+<h1>Word Output</h1>
+<p>There are some big changes in the generation of printed documents, the 
+ key one being you don&#39;t need to have Microsoft Word installed on your 
+ computer. The DOCX file created does not use any of the proprietary features 
+ of Microsoft Word meaning it can be read in any program that can read 
+ a DOCX file.</p>
+<h2>Creating a Word Output</h2>
+<p>Click Output &gt; Output Settings the first time you generate so that 
+ you can configure your Word preset as required. After the preset is configured, 
+ you can either go back there next time or you can click the Quick Generate 
+ icon top right in <span data-keyref="ProdName">Adobe RoboHelp 2019</span>.</p>
+<p>The icons above the list of presets allow you to generate an output, 
+ view it or create further outputs.</p>
+<h2>Preset Configuration</h2>
+<p>The settings appear in five groups as below.</p>
+<h3>General</h3>
+<p><img src="../assets/images/images/word_preset_01.png" alt="" class="Spacing_Bottom_Only" border="0"/></p>
+<p>Variables can be included in the Title. Place the cursor where you want 
+ the variable and press CTRL + 1.</p>
+<p>The language should be set for the Table of Contents, Index and Glossary 
+ page.</p>
+<p>You can select a script to run after the document has been generated.</p>
+<h3>Content</h3>
+<p><img src="../assets/images/images/word_preset_02.png" alt="" style="border: none;" border="0"/></p>
+<p>Most of the options here are obvious but be aware of a change from Classic 
+ versions. Previously in all versions of RoboHelp, the content has been 
+ limited by design to just those topics in the print layout TOC rather 
+ than all topics in the project not excluded by a condition expression 
+ as in online outputs. Now all outputs are based on the TOC used so any 
+ change to the TOC will also affect the print output. You can create a 
+ separate print toc if required.</p>
+<ul class="Tighter_Items">
+	<li class="Tighter_Items"><p class="Normal-Single">Include Table of 
+	 Contents sets whether or not there is a TOC in the generated document. 
+	 TOC entries hidden in an online output will not be hidden in the Word 
+	 output.</p></li>
+	<li class="Tighter_Items"><p class="Normal-Single">Include All Referenced 
+	 Topics sets whether or not topics are not in the TOC but with links 
+	 from topics in the TOC will also get included.</p></li>
+</ul>
+<p>Classic versions of RoboHelp had an option to limit the depth of the 
+ TOC in printed outputs. If you want a limited depth, set up a TOC with 
+ the required number of levels.</p>
+<h3>Layout</h3>
+<p><img src="../assets/images/images/word_preset_03.png" alt="" style="border: none;" border="0"/></p>
+<p>Here you can apply a Master Page to your document. See Style Hierarchy 
+ and Headers and Footers below for information on how that will affect 
+ your document.</p>
+<h3>Word</h3>
+<p><img src="../assets/images/images/word_preset_04.png" alt="" class="Spacing_Bottom_Only" border="0"/></p>
+<p>Here you can apply a Master Page to your document. </p>
+<p>What you see under In Word Output will depend on whether you have selected 
+ a Master Page and/or a Word Template or left both blank.</p>
+<p>See Style Hierarchy and Headers and Footers below for information on 
+ how that will affect your document.</p>
+<h3>Publish</h3>
+<p>You can create a Publish Location for this output. Typically that will 
+ be used to deliver it to developers. How this is set up is described in 
+ <a href="publishing.htm">Publishing</a>.</p>
+<h2>Style Hierarchy and Headers and Footers</h2>
+<h4>Project uses one CSS file that you want for the printed output.</h4>
+<p>Leave the Master Page and Word template fields blank. The project CSS 
+ styles will be in the Style Mapping options. If you want headers and footers, 
+ then you must use a Word template with the required header and footer 
+ set up. Under Style Mapping the default will mapped to the Word template 
+ style if that style is part of the template. You can change that to the 
+ style from the CSS.</p>
+<h4>Project uses multiple CSS files.</h4>
+<p>If the topics are not all using the same CSS and if no master page and 
+ no template is selected in the Word settings, the CSS files will be merged 
+ and will follow cascading rules. Thus if the first CSS states that H1 
+ is a red font at 24pt and second states H1 is a blue font at 24pt and 
+ the third states it is a green font at 18pt italic, the document H1 style 
+ will be green 18pt italic.</p>
+<p class="Emphasis1"><img src="../assets/images/BadgeTip.png" alt="" style="border: none;" border="0"/> As this can be unpredictable, 
+ it is recommended that where multiple CSS files are used in the various 
+ topics, that you either use a Master Page with a linked CSS file or a 
+ Word template.</p>
+<h4>Project uses one CSS file but you want different styles in the printed 
+ output.</h4>
+<p>You can use a master page with a CSS file attached and/or you can use 
+ a Word template.</p>
+<h5>Master Pages</h5>
+<p>Using a master page you can quickly change the styles by taking your 
+ topic CSS and creating a print version, mystyles_print.css for example. 
+ You can then quickly redefine the styles as required.</p>
+<p>You can use existing master pages. Note that any headers and footers 
+ in them will not appear in the output.</p>
+<h5>Word Templates</h5>
+<p>A Word template is required if the printed output is to have headers 
+ and footers. </p>
+<p>The template can be set up to have all the styles you require and in 
+ Style Mapping, <span data-keyref="ProdName">Adobe RoboHelp 2019</span> 
+ will default to what is in the template if there is a matching style. 
+ You can change that to the CSS style. </p>
+<p class="Emphasis1"><img src="../assets/images/BadgeTip.png" alt="" style="border: none;" border="0"/> If you are using a template 
+ solely to get headers and footers, create a new template to minimise the 
+ number of default styles in it.</p>
+<h4>Style Mapping</h4>
+<p>Under Style Mapping, you will see how <span data-keyref="ProdName">Adobe RoboHelp 2019</span> 
+ has mapped topics and you can change that as required. </p>
+<h2>Generating the Output</h2>
+<p>Once you have defined the preset, click the generate icon.</p>
+<div data-conref="../assets/snippets/Cancel Generation.hts"></div>
+<h2>Viewing the Output</h2>
+<p>Click the view icon on the Output Presets toolbar. The document 
+ will open in whichever program has been associated with the DOCX format.</p>
+<p> </p>
+
+
+</body></html>

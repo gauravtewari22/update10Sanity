@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="topic-check-list" content="Ran Smart Index"/>
+<meta name="topic-status" content="Complete"/>
+<meta name="generator" content="Adobe RoboHelp 2019"/>
+<title>Word and FrameMaker Docs</title>
+<link rel="StyleSheet" href="../assets/css/rh_reimagined.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Linking,Word and FrameMaker Linking,Importing,FrameMaker,Word Documents"/></head>
+
+<body>
+<h1>Word and FrameMaker Docs</h1>
+<p class="Emphasis1"><img src="../assets/images/BadgeNew.png" alt="" style="border: none;" border="0"/> Both Importing and Linking have 
+ been greatly simplified.</p>
+<h2>Importing Word Documents</h2>
+<p>Click File &gt; Import or right click in the Contents Panel and browse 
+ to the document you want to import to start the process.</p>
+<p class="Emphasis1"><img src="../assets/images/BadgeNew.png" alt="" style="border: none;" border="0"/> You don&#39;t have to have any version 
+ of Word installed on your computer. You can import any Word document created 
+ in Word 2013 or higher and saved in DOCX format.</p>
+<p>Initially use the default.wsf (Word Settings File) and browse to the 
+ document to be imported. As soon as you have selected the document, in 
+ the bottom right corner of the window you will see <span data-keyref="ProdName">Adobe RoboHelp 2019</span> 
+ reads the document after which you can proceed with the other settings.</p>
+<h3>General Settings</h3>
+<p>Select the CSS file to be used for mapping and select the style to be 
+ used as the break point if you want separate topics based on a style. 
+ </p>
+<p class="Emphasis1"><img src="../assets/images/BadgeTip.png" alt="" style="border: none;" border="0"/> If you use one CSS file for 
+ your topics, automapping (described below) works best if you use that 
+ CSS file here.</p>
+<p>Set the Topic Name Pattern if you want something other than the default.<br/>
+<img src="../assets/images/images/word_general.png" alt="" class="Spacing_Top_and_Bottom" border="0"/></p>
+<h3>Automapping</h3>
+<p>Before looking at the remaining settings, you need to understand how 
+ automapping works. <span data-keyref="ProdName">Adobe RoboHelp 2019</span> 
+ attempts to automap styles where it can match the name in the Word document 
+ with a style in the CSS defined for style mapping. Against each style 
+ in Character, Paragraph and Table settings you will see how the styles 
+ have been mapped.</p>
+<p>You then have the option to change any of the mappings by clicking the 
+ dropdowns.</p>
+<p><img src="../assets/images/images/word_mapping.png" alt="" class="Spacing_Bottom_Only" border="0"/></p>
+<p>Using the dropdowns, you can change the styles that automapping has 
+ applied.</p>
+<ul>
+	<li><p>If any styles cannot be mapped because they are unique to the 
+	 Word document, the Mapped Style dropdown will allow you choose Import 
+	 Style, Discard Style or Map to Style.</p></li>
+	<ul>
+		<li><p>Discard Style maps any style in Word, including headings, 
+		 to the &lt;p&gt; tag in the CSS used for style mapping. </p></li>
+		<li><p>Import Style will create the style in a second CSS with 
+		 the name in the format &lt;word_doc_name.css&gt;.</p></li>
+		<li><p>Under Map to Style, you will see the styles defined in your 
+		 CSS.</p></li>
+		<li><p>There is also an option to map to Pre to format text that 
+		 looks like code.</p></li>
+	</ul>
+	<li><p>A new Discard Content option allows you to discard any content 
+	 with the selected Word style.</p></li>
+</ul>
+<p>The styles that can be mapped will be applied in the topic(s) created 
+ and will use the definitions in the style mapping CSS that will be linked 
+ to the topic. Going forward, any changes to your CSS would then be applied 
+ to the mapped styles in the imported topic(s) in the same way as 
+ all other topics. </p>
+<p class="Emphasis1"><img src="../assets/images/BadgeTip.png" alt="" style="border: none;" border="0"/> If you have styles in Word and 
+ want to change them in RoboHelp <span style="font-style: italic;">after</span> 
+ importing, add a style to your CSS with a name such as Reformat and set 
+ the font for that with a garish color. Then map those styles to Reformat. 
+ After the import you can go through the topic(s) created and apply different 
+ styles as required. The garish color will make them easy to find.</p>
+<h3>Character Settings</h3>
+<p>Here you set the Mapped Style settings in Automapping above as required.<br/>
+</p>
+<p class="Emphasis1"><img src="../assets/images/BadgeNew.png" alt="" style="border: none;" border="0"/> Word documents retain many styles 
+ that are not used in the document, especially documents that have been 
+ worked on by many people. Previously all the styles would have appeared 
+ here for mapping. In <span data-keyref="ProdName">Adobe RoboHelp 2019</span> 
+ only the styles in use will appear.</p>
+<p>Here there are no character styles in the CSS and the desired result 
+ is to use the &lt;p&gt; tag in RoboHelp. That is what will happen using 
+ Discard Style.<br/>
+<img src="../assets/images/images/word_character.png" alt="" class="Spacing_Top_and_Bottom" border="0"/></p>
+<h3>Paragraph Settings</h3>
+<p>Here you set the Mapped Style settings in Automapping above as required.</p>
+<p class="Emphasis1"><img src="../assets/images/BadgeNew.png" alt="" style="border: none;" border="0"/> Word documents retain many styles 
+ that are not used in the document, especially documents that have been 
+ worked on by many people. Previously all the style would have appeared 
+ here for mapping. In <span data-keyref="ProdName">Adobe RoboHelp 2019</span> 
+ only the styles in use will appear.</p>
+<p>Here <span data-keyref="ProdName">Adobe RoboHelp 2019</span> 
+ has automapped Heading 1, Heading 2 and Normal. CSSTest has not been found 
+ in the CSS file used for style mapping so Import Word Style has been suggested. 
+ You can either select a style from the dropdown or apply Discard Style 
+ when any paragraph in the Word document will be set to &lt;p&gt; in your 
+ topic.<br/>
+<img src="../assets/images/images/word_paragraph.png" alt="" class="Spacing_Top_and_Bottom" border="0"/></p>
+<h3>Table Settings</h3>
+<p>Any tables in your Word document can be mapped to table styles defined 
+ in your CSS.</p>
+<p><img src="../assets/images/images/word_table.png" alt="" class="Spacing_Bottom_Only" border="0"/></p>
+<h3>Advanced Settings</h3>
+<p>In most cases the settings below will work best.</p>
+<p><img src="../assets/images/images/word_advanced.png" alt="" class="Spacing_Bottom_Only" border="0"/></p>
+<p>With updates applied, you will see all the above settings.</p>
+<ul class="Standard_Bullet">
+	<li class="Standard_Bullet"><p>In most cases it is best to select the 
+	 Convert Word Lists to HTML Lists check box.</p></li>
+	<li class="Standard_Bullet"><p>If you select Add Topics to Table of 
+	 Contents, you will be able to create a new TOC or add to an existing 
+	 TOC. A page will be created in the TOC for each topic created on import.</p></li>
+	<li class="Standard_Bullet"><p>Supplied scripts or your own scripts 
+	 can be set to run automatically after import.</p></li>
+</ul>
+<h2>Saving Your Settings</h2>
+<p>Before you click Import, if you have made any changes to the settings 
+ that you want to use again, click Save Settings. Each time you import, 
+ the last WSF file saved will appear but you can choose any other configuration 
+ you have saved.</p>
+<h2>Linking Word Documents</h2>
+<p>Simply right click in the Contents Panel and select Link &gt; Link File 
+ and browse to any DOCX file.</p>
+<p>When the DOCX file is displayed in the Contents Panel, hover over it 
+ and select Create Topic(s) in the Options menu and your topic(s) 
+ will be created. The settings for the linked document will be the wsf 
+ file defined in Project Settings.</p>
+<p>There is a menu option Edit Settings as below. Click that to change 
+ the settings that will be applied to the default wsf file as defined in 
+ Project Settings.<br/>
+<img src="../assets/images/images/link01.png" alt="" class="Spacing_Top_Only" border="0"/></p>
+<h2>FrameMaker Documents</h2>
+<p>FrameMaker import and linking is included with <span data-keyref="ProdName">Adobe RoboHelp 2019</span>. 
+ You need FrameMaker 2019 Update 3. It works in broadly the same way as 
+ Word described above.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+
+
+</body></html>

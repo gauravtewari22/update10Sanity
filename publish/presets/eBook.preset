@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preset>
+  <content>
+    <conditional>
+      <name>NOT_Exclude</name>
+      <path>../expressions/NOT_Exclude.expn</path>
+    </conditional>
+    <toc>
+      <name>rh_reimagined</name>
+      <path>../../toc/rh_reimagined.toc</path>
+    </toc>
+    <index type="boolean">true</index>
+    <glossary>
+      <name>rh_reimagined</name>
+      <path>../../glossary/rh_reimagined.glo</path>
+    </glossary>
+    <brs type="array"></brs>
+    <mapFiles type="array"></mapFiles>
+    <includeExpandingText type="boolean">false</includeExpandingText>
+    <includeDropdownText type="boolean">false</includeDropdownText>
+  </content>
+  <title>RoboHelp Reimagined</title>
+  <type>epub</type>
+  <name>eBook</name>
+  <starterPage>rh_reimagined.epub</starterPage>
+  <defaultTopic></defaultTopic>
+  <lowercasenames type="number">0</lowercasenames>
+  <search>
+    <context type="boolean">false</context>
+    <showSpeclChars type="boolean">false</showSpeclChars>
+    <speclChars>0;1;2;3;4;5;6;7;8;9</speclChars>
+  </search>
+  <sitemap>
+    <use type="boolean">false</use>
+    <changeFrequency></changeFrequency>
+  </sitemap>
+  <patchHomepage type="boolean">true</patchHomepage>
+  <gdprCompliance type="boolean">true</gdprCompliance>
+</preset>

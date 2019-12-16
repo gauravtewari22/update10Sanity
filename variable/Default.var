@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  
+<map>
+    
+<title>Variables</title>
+  
+<keydef keys="ProdName">
+<topicmeta>
+<keywords>
+<keyword>Adobe RoboHelp 2019</keyword></keywords></topicmeta></keydef>
+<keydef keys="ProdName_Generic">
+<topicmeta>
+<keywords>
+<keyword>Adobe RoboHelp</keyword></keywords></topicmeta></keydef></map>

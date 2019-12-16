@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preset>
+  <content>
+    <conditional>
+      <name>NOT_Online_Only</name>
+      <path>../expressions/NOT_Online_Only.expn</path>
+    </conditional>
+    <toc>
+      <name>rh_reimagined</name>
+      <path>../../toc/rh_reimagined.toc</path>
+    </toc>
+    <index type="boolean">true</index>
+    <glossary>
+      <name>rh_reimagined</name>
+      <path>../../glossary/rh_reimagined.glo</path>
+    </glossary>
+    <brs type="array"></brs>
+    <mapFiles type="array"></mapFiles>
+    <generatetoc type="boolean">true</generatetoc>
+    <includereftopics type="boolean">true</includereftopics>
+    <includeExpandingText type="boolean">false</includeExpandingText>
+    <includeDropdownText type="boolean">false</includeDropdownText>
+  </content>
+  <title>RoboHelp Reimagined</title>
+  <type>pdf</type>
+  <name>Printed Documentation</name>
+  <starterPage>RoboHelp_Reimagined_Update_10.pdf</starterPage>
+  <defaultTopic></defaultTopic>
+  <lowercasenames type="number">0</lowercasenames>
+  <search>
+    <context type="boolean">false</context>
+    <showSpeclChars type="boolean">false</showSpeclChars>
+    <speclChars>0;1;2;3;4;5;6;7;8;9</speclChars>
+  </search>
+  <sitemap>
+    <use type="boolean">false</use>
+    <changeFrequency></changeFrequency>
+  </sitemap>
+  <patchHomepage type="boolean">true</patchHomepage>
+  <gdprCompliance type="boolean">true</gdprCompliance>
+  <pdf>
+    <margin type="array">
+      <marginitem type="number">15</marginitem>
+      <marginitem type="number">15</marginitem>
+      <marginitem type="number">15</marginitem>
+      <marginitem type="number">15</marginitem>
+    </margin>
+    <multiheaders type="boolean">true</multiheaders>
+    <tocmasterpages>
+      <common type="boolean">true</common>
+    </tocmasterpages>
+    <topicmasterpages>
+      <common type="boolean">true</common>
+      <even>../../contents/assets/masterpages/Print General.htt</even>
+      <first>../../contents/assets/masterpages/Print General.htt</first>
+      <odd>../../contents/assets/masterpages/Print General.htt</odd>
+    </topicmasterpages>
+    <glomasterpages>
+      <common type="boolean">true</common>
+    </glomasterpages>
+    <indexmasterpages>
+      <common type="boolean">true</common>
+    </indexmasterpages>
+  </pdf>
+</preset>

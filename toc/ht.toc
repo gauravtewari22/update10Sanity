@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+  <title>Table of Contents</title>
+  <book navtitle="01_rh_reimagined" format="html" processing-role="normal">
+    <page href="../contents/01_rh_reimagined/robohelp_reimagined.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="authoring" format="html" processing-role="normal">
+    <page href="../contents/authoring/browse_sequences.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/authoring/contents_panel.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/authoring/Copy_of_Lists.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/authoring/dropdowns.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/authoring/images_and_videos.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/authoring/lists.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/authoring/master_pages.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/authoring/merged_help.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/authoring/resource_linking.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/authoring/scripts.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/authoring/see_also_and_related.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/authoring/snippets.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/authoring/source_control.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/authoring/tables.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/authoring/topic_list.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/authoring/variables.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/authoring/word_and_fm_docs.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/authoring/working_on_topics.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="bits_and_pieces" format="html" processing-role="normal">
+    <page href="../contents/bits_and_pieces/bits_and_pieces.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="links" format="html" processing-role="normal">
+    <page href="../contents/links/useful_links.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="outputs" format="html" processing-role="normal">
+    <page href="../contents/outputs/calling_csh_help.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/outputs/command_line.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/outputs/dynamic_content.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/outputs/mapping.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/outputs/outputs_chm.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/outputs/outputs_ebook.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/outputs/outputs_frameless.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/outputs/outputs_general.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/outputs/outputs_mobile_apps.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/outputs/outputs_printed_docs.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/outputs/outputs_responsive.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/outputs/outputs_webhelp.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/outputs/outputs_xml.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/outputs/publishing.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/outputs/skin_editor.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="reports" format="html" processing-role="normal">
+    <page href="../contents/reports/reports.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="reviewing" format="html" processing-role="normal">
+    <page href="../contents/reviewing/reviewing.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="single_sourcing" format="html" processing-role="normal">
+    <page href="../contents/single_sourcing/single_sourcing.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="toc_index_glossary" format="html" processing-role="normal">
+    <page href="../contents/toc_index_glossary/glossary.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/toc_index_glossary/index.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/toc_index_glossary/toc.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="upgrading" format="html" processing-role="normal">
+    <page href="../contents/upgrading/earlier_version_notes.htm" format="html" processing-role="normal"></page>
+    <page href="../contents/upgrading/upgrading_to_2019.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book navtitle="working_with_rh" format="html" processing-role="normal">
+    <page href="../contents/working_with_rh/ui.htm" format="html" processing-role="normal"></page>
+  </book>
+  <book href="../contents/New_Topic.htm" format="html" processing-role="normal">
+    <page navtitle="123" href="../contents/New_Topic.htm#123" format="html" processing-role="normal"></page>
+    <page navtitle="op" href="../contents/New_Topic.htm#op" format="html" processing-role="normal"></page>
+  </book>
+  <page href="../contents/README.htm" format="html" processing-role="normal"></page>
+</map>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>        
+
+<glossgroup id="testr">          
+<title>Glossary Definitions</title>        
+<glossentry id="testr_bnm">
+<glossterm>bnm</glossterm>
+<glossdef>dregs</glossdef></glossentry>
+<glossentry id="testr_qweds">
+<glossterm>weds</glossterm>
+<glossdef>mink
+</glossdef></glossentry></glossgroup>

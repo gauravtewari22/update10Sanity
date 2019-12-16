@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="topic-status" content="Complete"/>
+<meta name="generator" content="Adobe RoboHelp 2019"/>
+<title>Single Sourcing</title>
+<link rel="StyleSheet" href="../assets/css/rh_reimagined.css" type="text/css"/>
+<meta name="rh-index-keywords" content="Condition Tags and Expressions,Single Sourcing"/></head>
+
+<body>
+<h1>Single Sourcing Using Condition Tags</h1>
+<p>Single sourcing is a method of applying condition tags to topics, content 
+ in topics, toc books and pages and index entries so that the tag can be 
+ included in a condition expression to exclude it from a chosen output. 
+ For example, a single topic could contain additional information only 
+ to be seen in certain outputs, perhaps a printed output needs an image 
+ not required in online versions. Essentially it means a single project 
+ (source) can produce multiple outputs, each with different content. This 
+ is done by using Condition Tags.</p>
+<h2>How do Condition Tags Work?</h2>
+<p>The concept is best explained using an example. Let&#39;s say you are producing 
+ a knowledge base for your company with some content that applies to everyone, 
+ some applies only US readers, some only applies to UK readers and some 
+ only applies to Canadian readers. Also end users must not see each others 
+ content. In that scenario <a href="../outputs/dynamic_content.htm">Dynamic 
+ Content Filtering</a> would not work as they could all see the content 
+ for the others. You need to generate separate outputs for each group.</p>
+<p>In this example you would create three condition tags labelled US, UK 
+ and Canada.</p>
+<p>The screenshot shows the default condition tag groups. You can edit 
+ their names and add or remove the groups in Project Settings.</p>
+<p><img src="../assets/images/images/tags01.png" alt="" class="Spacing_None" border="0"/></p>
+<p>Here though Audience suits our purposes so click the + icon, select 
+ the group in the dropdown that displays and set the color for it.</p>
+<p class="Emphasis1"><img src="../assets/images/BadgeTip.png" alt="" style="border: none;" border="0"/> When you set the color for any 
+ tag, also set the opacity to low so that the text is still legible.</p>
+<p><img src="../assets/images/images/tags02.png" alt="" class="Spacing_None" border="0"/><br/>
+With the required tags set up, you now create your content. Here paragraphs 
+ have been set up with content for a specific audience.</p>
+<p>Simply select the text to which the condition tag is to be applied, 
+ right click and select Apply Condition Tags.<br/>
+<img src="../assets/images/images/tags03.png" alt="" class="Spacing_Top_Only" border="0"/></p>
+<p>In the Preview you can select specific tags to see the effect of using 
+ the tags.</p>
+<p class="Emphasis1"><img src="../assets/images/BadgeWarning.png" alt="" style="border: none;" border="0"/> In Preview you select a tag 
+ to include its content. Keep in mind that when you generate your output, 
+ the expression you create there could reverse that.</p>
+<p>You can also set a condition at topic level in the Properties </p>
+<h2>Using Condition Tags in an Expression</h2>
+<p>In Output &gt; Output Settings, click Condition Expressions, then click 
+ the + icon to create an expression.<br/>
+<img src="../assets/images/images/tags04.png" alt="" class="Spacing_Top_and_Bottom" border="0"/></p>
+<p>As you drag tags, by default <span data-keyref="ProdName">Adobe RoboHelp 2019</span> 
+ will set the tag to be excluded and additional tags will be set to be 
+ AND.</p>
+<p>Thus if you drag both UK and Canada, by default the expression will 
+ be Exclude UK AND Exclude Canada so the output will exclude anything that 
+ has the UK or Canada condition tag applied. It will include content that 
+ has no tags or other tags.</p>
+<p>For other purposes, you can easily change Exclude to Include and you 
+ can change AND to OR.</p>
+<h2>Generating an Output</h2>
+<p>By using different expressions, you can generate different outputs for 
+ different audiences, such as in the example above, or you could apply 
+ the Print condition tag to images and then exclude the images from online 
+ help but include them in Printed Documentation and so on.</p>
+<p>In the Output Presets you can either select the required expression 
+ each time you generate or you can create one or more presets and set each 
+ one up with a specific expression. In this example you might set up Responsive 
+ HTML5 US, Responsive HTML5 UK and Responsive HTML5 Canada.</p>
+<p> </p>
+<p> </p>
+<p> </p>
+
+
+</body></html>

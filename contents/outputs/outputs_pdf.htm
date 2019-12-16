@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="topic-status" content="Complete"/>
+<meta name="generator" content="Adobe RoboHelp 2019"/>
+<title>PDF Output</title>
+<link rel="StyleSheet" href="../assets/css/rh_reimagined.css" type="text/css"/>
+<meta name="rh-index-keywords" content="PDF"/></head>
+
+<body>
+<h1>PDF Output</h1>
+<p>There are some big changes in the generation of printed documents, the 
+ key one being you don&#39;t need to have Microsoft Word installed on your 
+ computer. </p>
+<p class="Emphasis1"><img src="../assets/images/BadgeNew.png" alt="" style="border: none;" border="0"/> In Classic versions of <span data-keyref="ProdName_Generic">Adobe RoboHelp</span> Microsoft 
+ Word was required as part of the process of creating a PDF file, that 
+ is no longer a requirement.</p>
+<h2>Creating a PDF Output</h2>
+<p>Click Output &gt; Output Settings the first time you generate so that 
+ you can configure your PDF preset as required. After the preset is configured, 
+ you can either go back there next time or you can click the Quick Generate 
+ icon top right in <span data-keyref="ProdName">Adobe RoboHelp 2019</span>.</p>
+<p>The icons above the list of presets allow you to generate an output, 
+ view it or create further outputs.</p>
+<p>PDF files can be created in two ways:-</p>
+<ul>
+	<li><p>If the PDF will not require any editing after generation, you 
+	 can use the PDF preset.</p></li>
+	<li><p>If you need to make any changes such as where page breaks occur, 
+	 then use the <a href="outputs_word.htm">Word (DOCX) Output</a> first. 
+	 After editing, you can generate your PDF from there using any PDF 
+	 generator.</p></li>
+</ul>
+<h2>Preset Configuration</h2>
+<p>The settings appear in five groups as below.</p>
+<h3>General</h3>
+<p><img src="../assets/images/images/print01.png" alt="" class="Spacing_Top_and_Bottom" border="0" /></p>
+<p>Variables can be included in the Title. Place the cursor where you want 
+ the variable and press CTRL + 1.</p>
+<p>The language should be set for the Table of Contents, Index and Glossary 
+ page.</p>
+<p>You can select a script to run after the PDF has been generated.</p>
+<h3>Content</h3>
+<p><img src="../assets/images/images/print02.png" alt="" class="Spacing_Bottom_Only" border="0"/></p>
+<p>Most of the options here are obvious but be aware of a change from Classic 
+ versions. Previously in all versions of RoboHelp, the content has been 
+ limited by design to just those topics in the print layout TOC rather 
+ than all topics in the project not excluded by a condition expression 
+ as in online outputs. Now all outputs are based on the TOC used so any 
+ change to the TOC will also affect the print output. You can create a 
+ separate print toc if required.</p>
+<ul class="Tighter_Items">
+	<li class="Tighter_Items"><p class="Normal-Single">Include Table of 
+	 Contents sets whether or not there is a TOC in the generated document. 
+	 TOC entries hidden in an online output will not be hidden in the PDF 
+	 output.</p></li>
+	<li class="Tighter_Items"><p class="Normal-Single">Include All Referenced 
+	 Topics sets whether or not topics are not in the TOC but with links 
+	 from topics in the TOC will also get included.</p></li>
+</ul>
+<p>Classic versions of RoboHelp had an option to limit the depth of the 
+ TOC in printed outputs. If you want a limited depth, set up a TOC with 
+ the required number of levels.</p>
+<p class="Emphasis1"><img src="../assets/images/BadgeTip.png" alt="" style="border: none;" border="0"/> The cover page needs to be an 
+ HTM file. If your cover page is in DOCX format, save that as a Web Page 
+ in Word.</p>
+<h3>Layout</h3>
+<p>Here you have various options.</p>
+<h4>Same Appearance as Online with no Header or Footer</h4>
+<p>If you want the printed output to simply contain the topics using the 
+ came CSS as the online help with no header or footer, leave the Master 
+ Page field set to None and ignore the options on this page.</p>
+<h4>Different Fonts and/or a single Header and/or Footer</h4>
+<p>If you want your printed output to have different fonts and/or headers 
+ and footers, you need to create at least one master page. Link the master 
+ page to the required CSS and define what you want in the header/footer. 
+ The header and/or footer will then be applied to all pages of your PDF 
+ provided you leave the checkbox clear.</p>
+<p class="Emphasis1"><img src="../assets/images/BadgeTip.png" alt="" style="border: none;" border="0"/> Instead of using your own master 
+ page, <span data-keyref="ProdName">Adobe RoboHelp 2019</span> 
+ ships with an optimized PDF Master page. It is recommended that you use 
+ this. If you want different odd and even master pages, create a copy and 
+ name the pages to differentiate them.<br/>
+If your project was created before Update 6 was released, create a new 
+ project and copy the PDF master page and CSS from there into your project.</p>
+<p><img src="../assets/images/images/print03.png" alt="" class="Spacing_Bottom_Only" border="0"/></p>
+<p>The PDF master page is associated with a supplied pdf.css file to give 
+ you more control over the appearance. Double click the CSS file to open 
+ it in the editor where you will find many styles that you can edit to 
+ meet your own requirements. The appearance of the TOC can be defined up 
+ to six levels.</p>
+<p>Use of this CSS is recommended but you can copy the styles to your own 
+ CSS if required. </p>
+<p><img src="../assets/images/images/pdf_css.png" alt="" class="Spacing_Bottom_Only" border="0"/></p>
+<h4>Multiple Headers and/or Footers</h4>
+<p>If you want different pages to have different headers and/or footers, 
+ then tick the checkbox. That will reveal the additional fields shown below 
+ with the Topics fields displayed.</p>
+<p>If you are using the supplied PDF master page, it is suggested that 
+ you create copies of that and amend them as required.</p>
+<p><img src="../assets/images/images/print04.png" alt="" class="Spacing_Bottom_Only" border="0"/></p>
+<h5>Topics - First Page</h5>
+<p>Leave as None or select the master page to be used for the first page 
+ of the topic section. </p>
+<p>If the same master page is to be used for all topics, tick the Apply 
+ To All Topics Pages checkbox. The Even Pages and Odd Pages fields will 
+ then be hidden.</p>
+<h5>Topics - Even Pages and Odd Pages</h5>
+<p>If different master pages are to be set for Even Pages and Odd Pages, 
+ leave the checkbox clear and select the required master pages.</p>
+<h5>TOC / Index and Glossary Sections</h5>
+<p>You can either click the Apply To All Sections button to apply the same 
+ settings to the other sections or you can click the dropdowns for each 
+ and apply the required settings.</p>
+<h3>PDF</h3>
+<p>Here you set up the page settings. Click the link icon if you want to 
+ apply different top, bottom, left or right margins.</p>
+<p><img src="../assets/images/images/print05.png" alt="" class="Spacing_Bottom_Only" border="0"/></p>
+<p>The Limit TOC Depth field is now controlled by the TOC that you associate 
+ with the PDF.</p>
+<h3>Publish</h3>
+<p>You can create a Publish Location for this output. Typically that will 
+ be used to deliver it to developers. How this is set up is described in 
+ <a href="publishing.htm">Publishing</a>.</p>
+<h2>Generating the Output</h2>
+<p>Once you have defined the preset, click the generate icon.</p>
+<div data-conref="../assets/snippets/Cancel Generation.hts"></div>
+<h2>Viewing the Output</h2>
+<p>Click the view icon on the Output Presets toolbar. <span data-keyref="ProdName">Adobe RoboHelp 2019</span> can create a 
+ PDF but it does not install a reader unless it is part of Adobe&#39;s Technical 
+ Communication Suite. If you don&#39;t have a reader installed, you will need 
+ to download one.</p>
+<p> </p>
+
+
+</body></html>

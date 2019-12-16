@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>    
+<filter displayname="" multiple="yes" withingroup="yes">    
+<group displayname="Others" name="Others">
+<condition name="Others" value="Exclude" displayname="Exclude" default="no"></condition>
+<condition name="Others" value="Online_Only" displayname="Online_Only" default="no"></condition></group></filter>
